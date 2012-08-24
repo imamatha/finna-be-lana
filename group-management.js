@@ -99,6 +99,13 @@ function onGroupCreateButton() {
     };
     showGroup();
 }
+function onProjectCreateButton() {
+    creating = true;
+    project = {
+            };
+    showProject();
+}
+
 
 // Trigger deletion of the specified group - // TODO confirmation dialog
 function onGroupDeleteButton() {
@@ -443,6 +450,7 @@ function prettifyMemberState(state) {
 function registerHandlers() {
     $("#group-back").click(showGroups);
     $("#group-create").click(onGroupCreateButton);
+	$("#project-create").click(onProjectCreateButton);
     $("#group-delete").click(onGroupDeleteButton);
     $("#group-save").click(onGroupSaveButton);
     $("#invite-add-button").click(onInviteAddButton);
