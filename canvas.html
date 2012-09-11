@@ -1,20 +1,31 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-<script>
-function displayDate()
-{
-document.getElementById("demo").innerHTML=Date();
-}
-</script>
-</head>
 <body>
 
-<h1>My First JavaScript</h1>
-<p id="demo">This is a paragraph.</p>
+<p>Click the button to check the age.</p>
 
-<button type="button" onclick="displayDate()">Display Date</button>
+Age:<input id="age" value="18" />
+
+<p>Old enough to vote?</p>
+
+<button onclick="myFunction()">submitt</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+
+var age,voteable;
+
+age=document.getElementById("age").value;
+voteable=(age<18)?"Too young":"Old enough";
+document.getElementById("demo").innerHTML=voteable;
+}
+
+</script>
 
 </body>
-</html> 
+</html>
 
