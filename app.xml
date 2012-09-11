@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Module>
-    <ModulePrefs title="JIVE APPLICATION"
+    <ModulePrefs title="Jive application1"
                 author="Mamatha"
-           description="My practice App">
+           description="My practice App1">
         <Link rel="Icon" href="group-icon.png"/>
         <Require feature="dynamic-height"/>
         <Require feature="jive-core-v2"/>
